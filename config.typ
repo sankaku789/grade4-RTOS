@@ -1,0 +1,116 @@
+// 書式設定を行う関数
+#let ss-setup(
+  seriffont: "New Computer Modern", 
+  seriffont-cjk: "Noto Serif CJK JP", 
+  sansfont: "Roboto", 
+  sansfont-cjk: "Noto Sans CJK JP",
+  margin-size: (top: 20mm, bottom: 27mm, left: 20mm, right: 20mm),
+  columns: 1,
+  fig-separator: ": ",
+  body) = {
+    // ページ全体の設定
+    set page(numbering: "1", columns: columns, margin: margin-size)
+   
+    // 本文の設定
+    set text(font: (seriffont, seriffont-cjk), lang: "ja",size: 10pt)
+    set par(first-line-indent: (amount: 1em, all: true), leading: 1.0em, justify: true)
+
+    set list(indent: 1.0em, body-indent: 0.8em, marker: ([\u{2022}], [-], [\u{002A}], [・]))
+    // 見出しの設定
+    set heading(numbering: "1.1.1   ", bookmarked: true)
+    show heading: it => {
+      set text(font: (sansfont, sansfont-cjk), lang: "ja", weight: 450)
+      set block(spacing: 1.7em)
+      it
+    }
+    show heading.where(level: 1): set text(size: 14.4pt)
+    show heading.where(level: 2): set text(size: 12pt)
+
+    // 図表の設定
+    show figure.where(kind: table): set figure(placement: none, supplement: [表])
+    show figure.where(kind: table): set figure.caption(position: top, separator: [#fig-separator])
+
+    show figure.where(kind: image): set figure(placement: none, supplement: [図])
+    show figure.where(kind: image): set figure.caption(position: bottom, separator: [#fig-separator])
+
+    show figure.where(kind: "list"): set figure(placement: none, supplement: [リスト])
+    show figure.where(kind: "list"): set figure.caption(position: top, separator: [#fig-separator])
+    body
+}
+
+// Texのtitlepage環境に相当する関数
+#let titlePage(
+  content, 
+  margin-size: (top: 20mm, bottom: 27mm, left: 20mm, right: 20mm)
+  ) = {
+    set page(numbering: none, margin: margin-size, columns: 1)
+    content
+    pagebreak()
+    counter(page).update(1)
+}
+
+// Texのmaketitleに対応する関数
+// #let makeTitle(
+//   title: "", 
+//   authors: "", 
+//   keywords: "",
+//   date: datetime.today().display("[year]年[month repr:numerical padding:none]月[day padding:none]日"),
+//   abstract: []
+// ) = {
+//   set align(center)
+//   v(2em)
+//   text(1.7em, title)
+//   v(1.5em)
+// }
+
+// 手軽なまとめプリントを作りたいとき用の関数
+#let printTitle(
+  title: "",
+  title-font-ja: "Noto Sans CJK JP",
+  title-font-en: "Roboto",
+  abstract: [],
+  name-bar: false
+) = {
+  set par()
+  align(left)[
+    #text(size: 20.74pt, font: (title-font-en, title-font-ja))[#title　　]
+    #linebreak()
+  ]
+  abstract
+  if name-bar == true {
+    align(right)[
+      #underline()[\u{3000}]
+      年
+      #underline()[\u{3000}\u{3000}]
+      組
+      #underline()[\u{3000}\u{3000}]
+      番
+      #let c = 0
+      #while c < 10 {
+        underline()[\u{3000}]
+        c = c + 1
+      }
+    ] 
+  }
+  v(5pt)
+}
+
+#let large(content) = {
+  text(size:12pt)[#content]
+}
+
+#let LARGE(content) = {
+  text(size:17.28pt)[#content]
+}
+
+#let Large(content) = {
+  text(size:14.4pt)[#content]
+}
+
+#let huge(content) = {
+  text(size:20.74pt)[#content] 
+}
+
+#let Huge(content) = {
+  text(size: 24.88pt)[#content]
+}

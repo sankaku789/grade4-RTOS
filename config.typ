@@ -1,25 +1,29 @@
+#let sansfont = "Roboto"
+#let sansfont-cjk = "Noto Sans CJK JP"
+#import "@preview/codelst:2.0.2":*
+
 // 書式設定を行う関数
 #let ss-setup(
   seriffont: "New Computer Modern", 
   seriffont-cjk: "Noto Serif CJK JP", 
-  sansfont: "Roboto", 
-  sansfont-cjk: "Noto Sans CJK JP",
+  sansfont: sansfont, 
+  sansfont-cjk: sansfont-cjk,
   margin-size: (top: 20mm, bottom: 27mm, left: 20mm, right: 20mm),
   columns: 1,
   fig-separator: ": ",
   body) = {
     // ページ全体の設定
     set page(numbering: "1", columns: columns, margin: margin-size)
-   
+
     // 本文の設定
     set text(font: (seriffont, seriffont-cjk), lang: "ja",size: 10pt)
     set par(first-line-indent: (amount: 1em, all: true), leading: 1.0em, justify: true)
 
     set list(indent: 1.0em, body-indent: 0.8em, marker: ([\u{2022}], [-], [\u{002A}], [・]))
     // 見出しの設定
-    set heading(numbering: "1.1.1   ", bookmarked: true)
+    set heading(numbering: "1.", bookmarked: true)
     show heading: it => {
-      set text(font: (sansfont, sansfont-cjk), lang: "ja", weight: 450)
+      set text(font: (sansfont, sansfont-cjk), lang: "ja", weight: "regular")
       set block(spacing: 1.7em)
       it
     }
@@ -35,15 +39,20 @@
 
     show figure.where(kind: "list"): set figure(placement: none, supplement: [リスト])
     show figure.where(kind: "list"): set figure.caption(position: top, separator: [#fig-separator])
+
+    
     body
 }
 
 // Texのtitlepage環境に相当する関数
 #let titlePage(
   content, 
-  margin-size: (top: 20mm, bottom: 27mm, left: 20mm, right: 20mm)
+  margin-size: (top: 20mm, bottom: 27mm, left: 20mm, right: 20mm),
+  sansfont: sansfont,
+  sansfont-cjk: sansfont-cjk
   ) = {
     set page(numbering: none, margin: margin-size, columns: 1)
+    set text(font: (sansfont, sansfont-cjk), lang: "ja")
     content
     pagebreak()
     counter(page).update(1)
@@ -93,6 +102,32 @@
     ] 
   }
   v(5pt)
+}
+
+#let includeSrc(
+  filepath: "",
+  lang: "plaintext",
+  caption: none,
+  numbers-side: "left",
+) = {
+  figure(
+    sourcefile(read(filepath), lang: lang, numbers-side: numbers-side),
+    caption: caption,
+    kind: "list",
+  )
+}
+
+#let printSrc(
+  content,
+  caption: none
+) = {
+  figure(
+    sourcecode()[
+      content
+    ],
+    caption: caption,
+    kind: "list",
+  )
 }
 
 #let large(content) = {

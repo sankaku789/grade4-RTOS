@@ -1,19 +1,22 @@
-#let sansfont = "Roboto"
-#let sansfont-cjk = "Noto Sans CJK JP"
+
+#let fonts = yaml("setting.yaml").font-setting
+#let settings = yaml("setting.yaml").document-setting
+
 #import "@preview/codelst:2.0.2":*
 
 // 書式設定を行う関数
 #let ss-setup(
-  seriffont: "New Computer Modern", 
-  seriffont-cjk: "Noto Serif CJK JP", 
-  sansfont: sansfont, 
-  sansfont-cjk: sansfont-cjk,
-  margin-size: (top: 20mm, bottom: 27mm, left: 20mm, right: 20mm),
-  columns: 1,
-  fig-separator: ": ",
+  seriffont: fonts.serif-font, 
+  seriffont-cjk: fonts.serif-font-cjk, 
+  sansfont: fonts.sans-font, 
+  sansfont-cjk: fonts.sans-font-cjk,
+  margin-size: (top: 27mm, bottom: 25mm, left: 20mm, right: 20mm),
+  columns: settings.columns,
+  fig-separator: settings.fig-tab-separator,
   body) = {
     // ページ全体の設定
     set page(numbering: "1", columns: columns, margin: margin-size)
+    set footnote(numbering: "[1] ")
 
     // 本文の設定
     set text(font: (seriffont, seriffont-cjk), lang: "ja",size: 10pt)
@@ -23,7 +26,7 @@
     // 見出しの設定
     set heading(numbering: "1.", bookmarked: true)
     show heading: it => {
-      set text(font: (sansfont, sansfont-cjk), lang: "ja", weight: "regular")
+      set text(font: (sansfont, sansfont-cjk), lang: "ja", weight: "medium")
       set block(spacing: 1.7em)
       it
     }
@@ -48,8 +51,8 @@
 #let titlePage(
   content, 
   margin-size: (top: 20mm, bottom: 27mm, left: 20mm, right: 20mm),
-  sansfont: sansfont,
-  sansfont-cjk: sansfont-cjk
+  sansfont: fonts.sans-font,
+  sansfont-cjk: fonts.sans-font-cjk
   ) = {
     set page(numbering: none, margin: margin-size, columns: 1)
     set text(font: (sansfont, sansfont-cjk), lang: "ja")
@@ -75,8 +78,8 @@
 // 手軽なまとめプリントを作りたいとき用の関数
 #let printTitle(
   title: "",
-  title-font-ja: "Noto Sans CJK JP",
-  title-font-en: "Roboto",
+  title-font-ja: fonts.serif-font-cjk,
+  title-font-en: fonts.serif-font,
   abstract: [],
   name-bar: false
 ) = {
@@ -104,30 +107,8 @@
   v(5pt)
 }
 
-#let includeSrc(
-  filepath: "",
-  lang: "plaintext",
-  caption: none,
-  numbers-side: "left",
-) = {
-  figure(
-    sourcefile(read(filepath), lang: lang, numbers-side: numbers-side),
-    caption: caption,
-    kind: "list",
-  )
-}
-
-#let printSrc(
-  content,
-  caption: none
-) = {
-  figure(
-    sourcecode()[
-      content
-    ],
-    caption: caption,
-    kind: "list",
-  )
+#let strong_ja(content) = {
+  text(weight: "bold", lang: "ja", font: (fonts.sans-font, fonts.sans-font-cjk))[#content]
 }
 
 #let large(content) = {

@@ -6,7 +6,7 @@
 
 #show: ss-setup.with()
 
-#include "src/reserch.typ"
+#include "src/research.typ"
 
 #bibliography("Hayagriva.yaml", style: "ieee", full: true)
 

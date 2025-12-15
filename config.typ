@@ -14,6 +14,7 @@
   body) = {
     // ページ全体の設定
     set page(numbering: "1", columns: columns, margin: margin-size)
+    set footnote(numbering: "1 ")
 
     // 本文の設定
     set text(font: (seriffont, seriffont-cjk), lang: "ja",size: 10pt)

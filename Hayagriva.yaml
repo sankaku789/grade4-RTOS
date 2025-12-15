@@ -5,3 +5,19 @@ hpc:
   url:
     value: https://www.ibm.com/jp-ja/think/topics/hpc
     date: 2025-12-16
+
+rtos-intro-ibm:
+  type: Web
+  title: リアルタイム・オペレーティング・システム（RTOS）とは 
+  author: IBM Corporation
+  url:
+    value: https://www.ibm.com/jp-ja/think/topics/real-time-operating-system
+    date: 2025-12-16
+
+rtos-intro-nec:
+  type: Web
+  title: RTOS（リアルタイムOS）とは？組込み開発での必要性と特徴
+  author: NEC Solutions Innovators
+  url:
+    value: https://www.nec-solutioninnovators.co.jp/ss/mobility/column/14/index.html
+    date: 2025-12-16

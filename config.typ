@@ -1,11 +1,13 @@
 #let sansfont = "Roboto"
 #let sansfont-cjk = "Noto Sans CJK JP"
+#let seriffont = "New Computer Modern"
+#let seriffont-cjk = "Noto Serif CJK JP"
 #import "@preview/codelst:2.0.2":*
 
 // 書式設定を行う関数
 #let ss-setup(
-  seriffont: "New Computer Modern", 
-  seriffont-cjk: "Noto Serif CJK JP", 
+  seriffont: seriffont, 
+  seriffont-cjk: seriffont-cjk, 
   sansfont: sansfont, 
   sansfont-cjk: sansfont-cjk,
   margin-size: (top: 20mm, bottom: 27mm, left: 20mm, right: 20mm),
@@ -24,7 +26,7 @@
     // 見出しの設定
     set heading(numbering: "1.", bookmarked: true)
     show heading: it => {
-      set text(font: (sansfont, sansfont-cjk), lang: "ja", weight: "regular")
+      set text(font: (sansfont, sansfont-cjk), lang: "ja", weight: "medium")
       set block(spacing: 1.7em)
       it
     }
@@ -76,8 +78,8 @@
 // 手軽なまとめプリントを作りたいとき用の関数
 #let printTitle(
   title: "",
-  title-font-ja: "Noto Sans CJK JP",
-  title-font-en: "Roboto",
+  title-font-ja: seriffont-cjk,
+  title-font-en: seriffont,
   abstract: [],
   name-bar: false
 ) = {
@@ -129,6 +131,10 @@
     caption: caption,
     kind: "list",
   )
+}
+
+#let strong_ja(content) = {
+  text(weight: "bold", lang: "ja", font: (sansfont, sansfont-cjk))[#content]
 }
 
 #let large(content) = {

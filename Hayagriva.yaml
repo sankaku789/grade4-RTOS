@@ -45,3 +45,11 @@ jsf-av-cpp:
   url:
     value: https://gigazine.net/news/20251208-f-35-cpp-jsf-standards/
     date: 2025-12-16
+
+zephyr-rtos:
+  type: Web
+  title: Zephyrとは？
+  author: Wind River Systems
+  url:
+    value: https://www.windriver.com/japan/solutions/learning/what-is-zephyr
+    date: 2025-12-16

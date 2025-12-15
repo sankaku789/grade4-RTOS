@@ -21,3 +21,27 @@ rtos-intro-nec:
   url:
     value: https://www.nec-solutioninnovators.co.jp/ss/mobility/column/14/index.html
     date: 2025-12-16
+
+hitachi-railway-rtos:
+  type: Web
+  title: 鉄道トータルシステムの展開
+  author: 日立製作所
+  url:
+    value: https://www.hitachihyoron.com/jp/pdf/1986/03/1986_03_01.pdf
+    date: 2025-12-16
+
+ctc-rtos:
+  type: Web
+  title: 組込みシステムにおけるRTOSの役割と選定ポイント
+  author: アドバンスドプランニング株式会社
+  url:
+    value: https://www.apc-inet.co.jp/business/train.html
+    date: 2025-12-16
+
+jsf-av-cpp:
+  type: Web
+  title: 戦闘機F-35にはC++の特殊ルール適用版が使われており例外処理や再帰関数が禁止されている
+  author: GIGAZINE
+  url:
+    value: https://gigazine.net/news/20251208-f-35-cpp-jsf-standards/
+    date: 2025-12-16

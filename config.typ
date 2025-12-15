@@ -10,7 +10,7 @@
   seriffont-cjk: fonts.serif-font-cjk, 
   sansfont: fonts.sans-font, 
   sansfont-cjk: fonts.sans-font-cjk,
-  margin-size: (top: 22mm, bottom: 27mm, left: 20mm, right: 20mm),
+  margin-size: (top: 27mm, bottom: 25mm, left: 20mm, right: 20mm),
   columns: settings.columns,
   fig-separator: settings.fig-tab-separator,
   body) = {
@@ -105,32 +105,6 @@
     ] 
   }
   v(5pt)
-}
-
-#let includeSrc(
-  filepath: "",
-  lang: "plaintext",
-  caption: none,
-  numbers-side: "left",
-) = {
-  figure(
-    sourcefile(read(filepath), lang: lang, numbers-side: numbers-side),
-    caption: caption,
-    kind: "list",
-  )
-}
-
-#let printSrc(
-  content,
-  caption: none
-) = {
-  figure(
-    sourcecode()[
-      content
-    ],
-    caption: caption,
-    kind: "list",
-  )
 }
 
 #let strong_ja(content) = {

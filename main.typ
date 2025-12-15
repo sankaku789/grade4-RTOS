@@ -8,5 +8,5 @@
 
 #include "src/research.typ"
 
-#bibliography("Hayagriva.yaml", style: "ieee", full: true)
+#bibliography("hayagriva.yaml", style: "ieee", full: true)
 

@@ -4,7 +4,7 @@
 
 //#include "title.typ" //学校指定の表紙の場合は，ここをコメントアウトして別途マージしてください。
 
-#show: ss-setup.with()
+#show: setup.with()
 
 #include "src/research.typ"
 

@@ -1,3 +1,9 @@
+document-meta:
+  title: "RTOS報告書"
+  author: [池田光聡]
+  keywords: [RTOS, 組込みシステム, リアルタイムオペレーティングシステム]
+  date: auto
+
 font-setting:
   sans-font: "Roboto"
   sans-font-cjk: "Noto Sans CJK JP"
@@ -8,3 +14,5 @@ document-setting:
   columns: 1
   fig-tab-separator: ": "
   headding-numbering: "1. "
+
+

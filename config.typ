@@ -1,23 +1,44 @@
 
-#let fonts = yaml("setting.yaml").font-setting
-#let settings = yaml("setting.yaml").document-setting
-
-#import "@preview/codelst:2.0.2":*
+#let fonts = yaml("config.yaml").font-setting
+#let settings = yaml("config.yaml").document-setting
+#let meta = yaml("config.yaml").document-meta 
 
 // 書式設定を行う関数
-#let ss-setup(
+#let setup(
   seriffont: fonts.serif-font, 
   seriffont-cjk: fonts.serif-font-cjk, 
   sansfont: fonts.sans-font, 
   sansfont-cjk: fonts.sans-font-cjk,
-  margin-size: (top: 27mm, bottom: 25mm, left: 20mm, right: 20mm),
+  margin-size: (top: 25mm, bottom: 27mm, left: 20mm, right: 20mm),
   columns: settings.columns,
   fig-separator: settings.fig-tab-separator,
   body) = {
+    // メタデータの設定
+    let date
+
+    if meta.date == "auto" {
+      date = datetime.today()
+      //date = date.display("[year]年[month repr:numerical padding:none]月[day padding:none]日")
+    } else {
+      let date_lst = meta.date.split("-")
+      date = datetime(
+        year: int(date_lst.at(0)),
+        month: int(date_lst.at(1)),
+        day: int(date_lst.at(2))
+      )
+    }
+
+    set document(
+      title: meta.title,
+      author: meta.author,
+      date: date,
+      keywords: meta.keywords
+    )
+
     // ページ全体の設定
     set page(numbering: "1", columns: columns, margin: margin-size)
     set footnote(numbering: "[1] ")
-
+    
     // 本文の設定
     set text(font: (seriffont, seriffont-cjk), lang: "ja",size: 10pt)
     set par(first-line-indent: (amount: 1em, all: true), leading: 1.0em, justify: true)
@@ -50,7 +71,7 @@
 // Texのtitlepage環境に相当する関数
 #let titlePage(
   content, 
-  margin-size: (top: 20mm, bottom: 27mm, left: 20mm, right: 20mm),
+  margin-size: (top: 27mm, bottom: 25mm, left: 20mm, right: 20mm),
   sansfont: fonts.sans-font,
   sansfont-cjk: fonts.sans-font-cjk
   ) = {

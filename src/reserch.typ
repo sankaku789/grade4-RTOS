@@ -1,11 +1,3 @@
-#import "config.typ":*
-#import "@preview/codelst:2.0.2":*
-#import "@preview/zebraw:0.5.5":*
-
-//#include "title.typ" //学校指定の表紙の場合は，ここをコメントアウトして別途マージしてください。
-
-#show: ss-setup.with()
-
 = RTOSの利用目的
 リアルタイムOS(以下，RTOS)の利用目的として，リアルタイム処理の実行がある．リアルタイム処理は，外部からのイベントや要求に対して，決められた時間内に応答や処理を行うことを指す．具体的には，「ハードリアルタイム」と「ソフトリアルタイム」と呼ばれる性質がある．
 
@@ -63,4 +55,3 @@ RTOSには，様々な種類が存在し，それぞれの特徴や用途に応�
 - *Zephyr*
     - Linux Foundationが提供するOSSのRTOSであり，IoTデバイスやウェアラブルデバイス向けに設計されている．多くのアーキテクチャをサポートしており，制約が多い小型デバイスに動作が最適化されている．
 
-#bibliography("Hayagriva.yaml", style: "ieee", full: true)

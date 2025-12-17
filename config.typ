@@ -9,7 +9,7 @@
   seriffont-cjk: fonts.serif-font-cjk, 
   sansfont: fonts.sans-font, 
   sansfont-cjk: fonts.sans-font-cjk,
-  margin-size: (top: 25mm, bottom: 27mm, left: 20mm, right: 20mm),
+  margin-size: (top: 30mm, bottom: 25mm, left: 25mm, right: 25mm),
   columns: settings.columns,
   fig-separator: settings.fig-tab-separator,
   body) = {

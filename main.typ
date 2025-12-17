@@ -6,6 +6,8 @@
 
 #show: setup.with()
 
+#includePDF("index.pdf")
+
 #include "src/research.typ"
 
 #bibliography("hayagriva.yaml", style: "ieee", full: true)

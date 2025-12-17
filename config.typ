@@ -96,6 +96,16 @@
 //   v(1.5em)
 // }
 
+#let includePDF(
+  file, 
+  margin-size: (top: 0mm, bottom: 0mm, left: 0mm, right: 0mm)
+) = {
+  set page(numbering: none, margin: margin-size, columns: 1)
+  image(file, format: "pdf")
+  pagebreak()
+  counter(page).update(1)
+}
+
 // 手軽なまとめプリントを作りたいとき用の関数
 #let printTitle(
   title: "",

@@ -36,7 +36,7 @@
 
     // ページ全体の設定
     set page(numbering: "1", columns: columns, margin: margin-size)
-    set footnote(numbering: "[1] ")
+    set footnote(numbering: "1 ")
     
     // 本文の設定
     set text(font: (seriffont, seriffont-cjk), lang: "ja",size: 10pt)
@@ -63,6 +63,9 @@
     show heading.where(level: 3): set text(size: 11pt)
 
     // 図表の設定
+    set table(
+      fill: (x, y) => if y == 0 { luma(230) } else { none }
+    )
     show figure.where(kind: table): set figure(placement: none, supplement: [表])
     show figure.where(kind: table): set figure.caption(position: top, separator: [#fig-separator])
 

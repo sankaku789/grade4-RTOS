@@ -53,3 +53,19 @@ zephyr-rtos:
   url:
     value: https://www.windriver.com/japan/solutions/learning/what-is-zephyr
     date: 2025-12-16
+
+autosar-protcol:
+  type: Web
+  title: AUTOSARとは？車載ソフトウェアの標準仕様のメリットと導入方法
+  author: NEC Solutions Innovators
+  url:
+    value: https://www.nec-solutioninnovators.co.jp/ss/mobility/column/13/index.html
+    date: 2025-12-17
+  
+train-moniter:
+  type: Web
+  title: 列車統合管理システムにおけるソフトウェア構築技術の変遷
+  author: 三菱電機
+  url:
+    value: https://www.toshiba.co.jp/sis/solution/transportation/
+    date: 2025-12-17

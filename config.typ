@@ -44,10 +44,13 @@
     set par(first-line-indent: (amount: 1em, all: true), leading: 1.0em, justify: true)
 
     set list(indent: 1.0em, body-indent: 0.8em, marker: ([\u{2022}], [-], [\u{002A}], [・]))
-    set enum(indent: 1.0em, body-indent: 0.8em, numbering: "1.a.i.A")
+    set enum(indent: 1.0em, body-indent: 0.8em, numbering: "(1.a.i.A)")
     show list: set par(first-line-indent: 0pt)
     show enum: set par(first-line-indent: 0pt)
 
+    // 参考文献の表示設定
+    set bibliography(style: "sist02", full: true)
+   
     // 見出しの設定
     set heading(numbering: "1.", bookmarked: true)
     show heading: it => {

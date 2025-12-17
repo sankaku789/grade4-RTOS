@@ -29,5 +29,5 @@
 
 = まとめ
 
-#bibliography("hayagriva.yaml", style: "ieee", full: true)
+#bibliography("hayagriva.yaml", style: "sist02", full: true)
 

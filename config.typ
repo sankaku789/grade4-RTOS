@@ -9,7 +9,7 @@
   seriffont-cjk: fonts.serif-font-cjk, 
   sansfont: fonts.sans-font, 
   sansfont-cjk: fonts.sans-font-cjk,
-  margin-size: (top: 25mm, bottom: 27mm, left: 20mm, right: 20mm),
+  margin-size: (top: 30mm, bottom: 25mm, left: 25mm, right: 25mm),
   columns: settings.columns,
   fig-separator: settings.fig-tab-separator,
   body) = {
@@ -18,7 +18,6 @@
 
     if meta.date == "auto" {
       date = datetime.today()
-      //date = date.display("[year]年[month repr:numerical padding:none]月[day padding:none]日")
     } else {
       let date_lst = meta.date.split("-")
       date = datetime(
@@ -43,10 +42,11 @@
     set text(font: (seriffont, seriffont-cjk), lang: "ja",size: 10pt)
     set par(first-line-indent: (amount: 1em, all: true), leading: 1.0em, justify: true)
 
+    // 箇条書きの設定
     set list(indent: 1.0em, body-indent: 0.8em, marker: ([\u{2022}], [-], [\u{002A}], [・]))
     set enum(indent: 1.0em, body-indent: 0.8em, numbering: "(1.a.i.A)")
     show list: set par(first-line-indent: 0pt)
-    show enum: set par(first-line-indent: 0pt)
+    show enum: set par(first-line-indent: 0pt)    
 
     // 参考文献の表示設定
     set bibliography(style: "sist02", full: true)
@@ -60,6 +60,7 @@
     }
     show heading.where(level: 1): set text(size: 14.4pt)
     show heading.where(level: 2): set text(size: 12pt)
+    show heading.where(level: 3): set text(size: 11pt)
 
     // 図表の設定
     show figure.where(kind: table): set figure(placement: none, supplement: [表])
@@ -71,7 +72,6 @@
     show figure.where(kind: "list"): set figure(placement: none, supplement: [リスト])
     show figure.where(kind: "list"): set figure.caption(position: top, separator: [#fig-separator])
 
-    
     body
 }
 

@@ -62,3 +62,10 @@ autosar-protcol:
     value: https://www.nec-solutioninnovators.co.jp/ss/mobility/column/13/index.html
     date: 2025-12-17
   
+train-moniter:
+  type: Web
+  title: 列車統合管理システムにおけるソフトウェア構築技術の変遷
+  author: 三菱電機
+  url:
+    value: https://www.toshiba.co.jp/sis/solution/transportation/
+    date: 2025-12-17

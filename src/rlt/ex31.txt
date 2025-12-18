@@ -1,0 +1,30 @@
+TOPPERS/ASP Kernel Release 1.9.0 for RX62N/TECL-01/02 (Dec  4 2025, 17:07:53)
+Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+                            Toyohashi Univ. of Technology, JAPAN
+Copyright (C) 2004-2014 by Embedded and Real-Time Systems Laboratory
+            Graduate School of Information Science, Nagoya Univ., JAPAN
+NIT, Tomakomai College,
+03. Ikeda Kosuke
+Copyright (C) 2010 by Witz Corporation, JAPAN
+Copyright (C) 2013 by Mitsuhiro Matsuura
+Copyright (C) 2014-2017 by Dep. of Computer Science and Engineering
+                    Tomakomai National College of Technology, JAPAN
+
+System logging task is started on port 1.
+ex31 started, MAC ADDR: 74:90:50:89:36:00.
+[  : 0.001] TSKID: 3, TSKPRI: 4, exinf: 0x00000003, name: task3 (main_task)
+[  : 0.002] TSKID: 2, TSKPRI: 5, exinf: 0x00000002, name: task2
+[  : 0.002] TASKID: 2, Count: 0,  SW: 0x00
+[  : 0.002] TSKID: 1, TSKPRI: 6, exinf: 0x00000001, name: task1
+[  : 6.884] TASKID: 1, TSKID: 2: Wake up
+[  : 6.884] TASKID: 2, Count: 1,  SW: 0xfe
+[  :12.386] TASKID: 1, TSKID: 2: Wake up
+[  :12.386] TASKID: 2, Count: 2,  SW: 0xfc
+[  :14.451] TASKID: 1, TSKID: 2: Wake up
+[  :14.451] TASKID: 2, Count: 3,  SW: 0xf8
+[  :15.827] TASKID: 1, TSKID: 2: Wake up
+[  :15.828] TASKID: 2, Count: 4,  SW: 0xf0
+[  :30.268] TASKID: 1, TSKID: 2: Wake up
+[  :30.268] TASKID: 2, Count: 5,  SW: 0xfc
+[  :32.333] TASKID: 1, TSKID: 2: Wake up
+[  :32.333] TASKID: 2, Count: 6,  SW: 0xff

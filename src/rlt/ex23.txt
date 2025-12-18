@@ -1,0 +1,54 @@
+TOPPERS/ASP Kernel Release 1.9.0 for RX62N/TECL-01/02 (Dec  4 2025, 15:38:39)
+Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+                            Toyohashi Univ. of Technology, JAPAN
+Copyright (C) 2004-2014 by Embedded and Real-Time Systems Laboratory
+            Graduate School of Information Science, Nagoya Univ., JAPAN
+NIT, Tomakomai College,
+03. Ikeda Kosuke
+Copyright (C) 2010 by Witz Corporation, JAPAN
+Copyright (C) 2013 by Mitsuhiro Matsuura
+Copyright (C) 2014-2017 by Dep. of Computer Science and Engineering
+                    Tomakomai National College of Technology, JAPAN
+
+System logging task is started on port 1.
+ex23 started, MAC ADDR: 74:90:50:89:36:00.
+[  : 0.001] TSKID: 3, TSKPRI: 4, exinf: 0x00000003, name: task3 (main_task)
+[  : 0.002] TSKID: 2, TSKPRI: 5, exinf: 0x00000002, name: task2
+[  : 0.002] TASKID: 2, Count: 0
+[  : 0.002] TSKID: 1, TSKPRI: 6, exinf: 0x00000001, name: task1
+[  : 0.002] TASKID: 1, Count: 0
+[  : 2.003] TASKID: 2, Count: 1
+[  : 3.003] TASKID: 1, Count: 1
+[  : 4.004] TASKID: 2, Count: 2
+[  : 6.004] TASKID: 1, Count: 2
+[  : 6.005] TASKID: 2, Count: 3
+[  : 8.006] TASKID: 2, Count: 4
+[  : 9.005] TASKID: 1, Count: 3
+[  :10.007] TASKID: 2, Count: 5
+[  :12.006] TASKID: 1, Count: 4
+[  :12.008] TASKID: 2, Count: 6
+[  :14.009] TASKID: 2, Count: 7
+[  :15.007] TASKID: 1, Count: 5
+[  :16.010] TASKID: 2, Count: 8
+[  :18.008] TASKID: 1, Count: 6
+[  :18.011] TASKID: 2, Count: 9
+[  :20.012] TASKID: 2, Count:10
+[  :21.009] TASKID: 1, Count: 7
+[  :22.013] TASKID: 2, Count:11
+[  :24.010] TASKID: 1, Count: 8
+[  :24.014] TASKID: 2, Count:12
+[  :26.015] TASKID: 2, Count:13
+[  :27.011] TASKID: 1, Count: 9
+[  :28.016] TASKID: 2, Count:14
+[  :30.012] TASKID: 1, Count:10
+[  :30.017] TASKID: 2, Count:15
+[  :32.018] TASKID: 2, Count:16
+[  :33.013] TASKID: 1, Count:11
+[  :34.019] TASKID: 2, Count:17
+[  :36.014] TASKID: 1, Count:12
+[  :36.020] TASKID: 2, Count:18
+[  :38.021] TASKID: 2, Count:19
+[  :39.015] TASKID: 1, Count:13
+[  :40.022] TASKID: 2, Count:20
+[  :42.016] TASKID: 1, Count:14
+[  :42.023] TASKID: 2, Count:21

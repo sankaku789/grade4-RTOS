@@ -1,0 +1,55 @@
+TOPPERS/ASP Kernel Release 1.9.0 for RX62N/TECL-01/02 (Dec 11 2025, 14:38:10)
+Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+                            Toyohashi Univ. of Technology, JAPAN
+Copyright (C) 2004-2014 by Embedded and Real-Time Systems Laboratory
+            Graduate School of Information Science, Nagoya Univ., JAPAN
+NIT, Tomakomai College,
+03. Ikeda Kosuke
+Copyright (C) 2010 by Witz Corporation, JAPAN
+Copyright (C) 2013 by Mitsuhiro Matsuura
+Copyright (C) 2014-2017 by Dep. of Computer Science and Engineering
+                    Tomakomai National College of Technology, JAPAN
+
+System logging task is started on port 1.
+ex41 started, MAC ADDR: 74:90:50:89:36:00.
+[  : 0.001] TSKID: 3, TSKPRI: 4, exinf: 0x00000003, name: task3 (main_task)
+[  : 0.002] TSKID: 2, TSKPRI: 5, exinf: 0x00000002, name: task2
+[  : 0.002] TSKID: 1, TSKPRI: 6, exinf: 0x00000001, name: task1
+[  : 5.418] TASKID: 1, CH:    r, LED:0x01 setting
+[  : 5.418] TASKID: 2, LED: 0x01 toggle
+[  : 6.456] TASKID: 1, CH:    R, LED:0x00 setting
+[  : 6.456] TASKID: 2, LED: 0x00 toggle
+[  : 7.943] TASKID: 1, CH:    g, LED:0x08 setting
+[  : 7.943] TASKID: 2, LED: 0x08 toggle
+[  : 8.587] TASKID: 1, CH:    G, LED:0x00 setting
+[  : 8.587] TASKID: 2, LED: 0x00 toggle
+[  :11.695] TASKID: 1, CH:    b, LED:0x04 setting
+[  :11.695] TASKID: 2, LED: 0x04 toggle
+[  :12.365] TASKID: 1, CH:    B, LED:0x00 setting
+[  :12.365] TASKID: 2, LED: 0x00 toggle
+[  :19.630] TASKID: 1, CH:    y, LED:0x02 setting
+[  :19.630] TASKID: 2, LED: 0x02 toggle
+[  :20.452] TASKID: 1, CH:    Y, LED:0x00 setting
+[  :20.452] TASKID: 2, LED: 0x00 toggle
+[  :24.346] TASKID: 1, CH:    A, LED:0x0f setting
+[  :24.346] TASKID: 2, LED: 0x0f toggle
+[  :24.839] TASKID: 1, CH:    a, LED:0x0f setting
+[  :24.839] TASKID: 2, LED: 0x0f toggle
+[  :29.748] TASKID: 1, CH:    C, LED:0x00 setting
+[  :29.748] TASKID: 2, LED: 0x00 toggle
+[  :31.112] TASKID: 1, CH:    A, LED:0x0f setting
+[  :31.112] TASKID: 2, LED: 0x0f toggle
+[  :31.751] TASKID: 1, CH:    c, LED:0x00 setting
+[  :31.751] TASKID: 2, LED: 0x00 toggle
+[  :35.571] TASKID: 1, CH:    l, LED:0x03 setting
+[  :35.571] TASKID: 2, LED: 0x03 toggle
+[  :38.964] TASKID: 1, CH:    L, LED:0x00 setting
+[  :38.964] TASKID: 2, LED: 0x00 toggle
+[  :41.221] TASKID: 1, CH:    U, LED:0x0c setting
+[  :41.221] TASKID: 2, LED: 0x0c toggle
+[  :42.547] TASKID: 1, CH:    u, LED:0x00 setting
+[  :42.547] TASKID: 2, LED: 0x00 toggle
+[  :56.975] TASKID: 1, CH: 0x0d press
+[  :56.976] TASKID: 2, LED: 0x00 toggle
+[  :66.736] TASKID: 1, CH: 0x08 press
+[  :66.736] TASKID: 2, LED: 0x00 toggle

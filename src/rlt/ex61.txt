@@ -1,0 +1,41 @@
+TOPPERS/ASP Kernel Release 1.9.0 for RX62N/TECL-01/02 (Dec 11 2025, 16:47:57)
+Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+                            Toyohashi Univ. of Technology, JAPAN
+Copyright (C) 2004-2014 by Embedded and Real-Time Systems Laboratory
+            Graduate School of Information Science, Nagoya Univ., JAPAN
+NIT, Tomakomai College,
+03. Ikeda Kosuke
+Copyright (C) 2010 by Witz Corporation, JAPAN
+Copyright (C) 2013 by Mitsuhiro Matsuura
+Copyright (C) 2014-2017 by Dep. of Computer Science and Engineering
+                    Tomakomai National College of Technology, JAPAN
+
+System logging task is started on port 1.
+ex61 started, MAC ADDR: 74:90:50:89:36:00.
+[  : 0.001] TSKID: 3, TSKPRI: 4, exinf: 0x00000003, name: task3 (main_task)
+[  : 0.002] TSKID: 2, TSKPRI: 5, exinf: 0x00000002, name: task2
+[  : 0.002] TSKID: 1, TSKPRI: 6, exinf: 0x00000001, name: task1
+[  : 0.002] TASKID: 1,  SW: 0xfe pressed
+[  : 0.002] TASKID: 1, LED: 0x01 setting
+[  :14.446] TASKID: 2, LED: 0x01
+[  :14.446] TASKID: 1,  SW: 0xff pressed
+[  :14.446] TASKID: 1, LED: 0x00 setting
+[  :16.511] TASKID: 2, LED: 0x00
+[  :16.511] TASKID: 1,  SW: 0xfd pressed
+[  :16.511] TASKID: 1, LED: 0x02 setting
+[  :19.264] TASKID: 2, LED: 0x02
+[  :19.264] TASKID: 1,  SW: 0xff pressed
+[  :19.264] TASKID: 1, LED: 0x00 setting
+[  :21.329] TASKID: 2, LED: 0x00
+[  :21.329] TASKID: 1,  SW: 0xfb pressed
+[  :21.329] TASKID: 1, LED: 0x04 setting
+[  :22.707] TASKID: 2, LED: 0x04
+[  :22.707] TASKID: 1,  SW: 0xff pressed
+[  :22.707] TASKID: 1, LED: 0x00 setting
+[  :24.772] TASKID: 2, LED: 0x00
+[  :24.772] TASKID: 1,  SW: 0xf7 pressed
+[  :24.772] TASKID: 1, LED: 0x08 setting
+[  :25.462] TASKID: 2, LED: 0x08
+[  :25.462] TASKID: 1,  SW: 0xff pressed
+[  :25.462] TASKID: 1, LED: 0x00 setting
+[  :26.840] TASKID: 2, LED: 0x00

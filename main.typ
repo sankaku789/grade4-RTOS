@@ -14,15 +14,12 @@
 
 #include "src/01_theory.typ"
 
-#include "src/03_process.typ"
-
 #include "src/02_device.typ"
 
-#include "src/04_progress.typ"
+#include "src/03_process.typ"
 
-#include "src/05_result.typ"
 
-#include "src/06_consideration.typ"
+
 
 = まとめ
 

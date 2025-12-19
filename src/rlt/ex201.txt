@@ -1,0 +1,81 @@
+TOPPERS/ASP Kernel Release 1.9.0 for RX62N/TECL-01/02 (Dec 18 2025, 17:53:10)
+Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+                            Toyohashi Univ. of Technology, JAPAN
+Copyright (C) 2004-2014 by Embedded and Real-Time Systems Laboratory
+            Graduate School of Information Science, Nagoya Univ., JAPAN
+NIT, Tomakomai College,
+03. Ikeda Kosuke
+Copyright (C) 2010 by Witz Corporation, JAPAN
+Copyright (C) 2013 by Mitsuhiro Matsuura
+Copyright (C) 2014-2017 by Dep. of Computer Science and Engineering
+                    Tomakomai National College of Technology, JAPAN
+
+System logging task is started on port 1.
+ex201 started, MAC ADDR: 74:90:50:89:36:00.
+[  : 0.001] TSKID: 5, TSKPRI: 4, exinf: 0x00000005, name: task5 (main_task)
+[  : 0.002] TSKID: 4, TSKPRI: 5, exinf: 0x00000004, name: task4
+[  : 0.002] TASKID:4, START
+[  : 0.002] TASKID:1 -> dispatch
+[  : 0.002] TSKID: 1, TSKPRI: 6, exinf: 0x00000001, name: task1
+[  : 0.002] TASKID:1, START
+[  : 1.003] TASKID:2 -> dispatch
+[  : 1.003] TSKID: 2, TSKPRI: 6, exinf: 0x00000002, name: task2
+[  : 1.003] TASKID:2, START
+[  : 2.004] TASKID:3 -> dispatch
+[  : 2.004] TSKID: 3, TSKPRI: 6, exinf: 0x00000003, name: task3
+[  : 2.004] TASKID:3, START
+[  : 3.005] TASKID:1 -> dispatch
+[  : 4.006] TASKID:2 -> dispatch
+[  : 5.007] TASKID:3 -> dispatch
+[  : 6.008] TASKID:1 -> dispatch
+[  : 7.009] TASKID:2 -> dispatch
+[  : 8.010] TASKID:3 -> dispatch
+[  : 9.011] TASKID:1 -> dispatch
+[  :10.012] TASKID:2 -> dispatch
+[  :11.013] TASKID:3 -> dispatch
+[  :12.014] TASKID:1 -> dispatch
+[  :13.015] TASKID:2 -> dispatch
+[  :14.016] TASKID:3 -> dispatch
+[  :15.017] TASKID:1 -> dispatch
+[  :16.018] TASKID:2 -> dispatch
+[  :17.019] TASKID:3 -> dispatch
+[  :18.020] TASKID:1 -> dispatch
+[  :19.021] TASKID:2 -> dispatch
+[  :20.022] TASKID:3 -> dispatch
+[  :21.023] TASKID:1 -> dispatch
+[  :22.024] TASKID:2 -> dispatch
+[  :23.025] TASKID:3 -> dispatch
+[  :24.026] TASKID:1 -> dispatch
+[  :25.027] TASKID:2 -> dispatch
+[  :26.028] TASKID:3 -> dispatch
+[  :27.029] TASKID:1 -> dispatch
+[  :28.030] TASKID:2 -> dispatch
+[  :29.031] TASKID:3 -> dispatch
+[  :30.032] TASKID:1 -> dispatch
+[  :31.033] TASKID:2 -> dispatch
+[  :32.034] TASKID:3 -> dispatch
+[  :33.035] TASKID:1 -> dispatch
+[  :34.036] TASKID:2 -> dispatch
+[  :35.037] TASKID:3 -> dispatch
+[  :36.038] TASKID:1 -> dispatch
+[  :37.039] TASKID:2 -> dispatch
+[  :38.040] TASKID:3 -> dispatch
+[  :39.041] TASKID:1 -> dispatch
+[  :40.042] TASKID:2 -> dispatch
+[  :41.043] TASKID:3 -> dispatch
+[  :42.044] TASKID:1 -> dispatch
+[  :43.045] TASKID:2 -> dispatch
+[  :44.046] TASKID:3 -> dispatch
+[  :45.047] TASKID:1 -> dispatch
+[  :46.048] TASKID:2 -> dispatch
+[  :47.049] TASKID:3 -> dispatch
+[  :48.050] TASKID:1 -> dispatch
+[  :49.051] TASKID:2 -> dispatch
+[  :50.052] TASKID:3 -> dispatch
+[  :51.053] TASKID:1 -> dispatch
+[  :52.054] TASKID:2 -> dispatch
+[  :53.055] TASKID:3 -> dispatch
+[  :54.056] TASKID:1 -> dispatch
+[  :55.057] TASKID:2 -> dispatch
+[  :56.058] TASKID:3 -> dispatch
+[  :57.059] TASKID:1 -> dispatch

@@ -1,0 +1,47 @@
+TOPPERS/ASP Kernel Release 1.9.0 for RX62N/TECL-01/02 (Dec 18 2025, 13:57:46)
+Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+                            Toyohashi Univ. of Technology, JAPAN
+Copyright (C) 2004-2014 by Embedded and Real-Time Systems Laboratory
+            Graduate School of Information Science, Nagoya Univ., JAPAN
+NIT, Tomakomai College,
+03. Ikeda Kosuke
+Copyright (C) 2010 by Witz Corporation, JAPAN
+Copyright (C) 2013 by Mitsuhiro Matsuura
+Copyright (C) 2014-2017 by Dep. of Computer Science and Engineering
+                    Tomakomai National College of Technology, JAPAN
+
+System logging task is started on port 1.
+ex81 started, MAC ADDR: 74:90:50:89:36:00.
+[  : 0.001] TSKID: 3, TSKPRI: 4, exinf: 0x00000003, name: task3 (main_task)
+[  : 0.002] TSKID: 1, TSKPRI: 6, exinf: 0x00000001, name: task1
+[  : 0.002] TASKID: 1, Count: 0
+[  : 0.002] TSKID: 2, TSKPRI: 6, exinf: 0x00000002, name: task2
+[  : 0.002] TASKID: 2, Count: 0
+r[  : 7.647] TASKID: 1, CH: 0x72, FLG: 0x01
+[  : 7.647] TASKID: 2, Count: 1, flag: 0x01
+R[  :10.299] TASKID: 1, CH: 0x52, FLG: 0x10
+[  :10.299] TASKID: 2, Count: 2, flag: 0x00
+g[  :12.975] TASKID: 1, CH: 0x67, FLG: 0x18
+[  :12.975] TASKID: 2, Count: 3, flag: 0x08
+G[  :14.432] TASKID: 1, CH: 0x47, FLG: 0x10
+[  :14.432] TASKID: 2, Count: 4, flag: 0x00
+B[  :17.648] TASKID: 1, CH: 0x42, FLG: 0x14
+[  :17.648] TASKID: 2, Count: 5, flag: 0x04
+b[  :18.940] TASKID: 1, CH: 0x62, FLG: 0x10
+[  :18.940] TASKID: 2, Count: 6, flag: 0x00
+y[  :21.134] TASKID: 1, CH: 0x79, FLG: 0x12
+[  :21.134] TASKID: 2, Count: 7, flag: 0x02
+y[  :22.769] TASKID: 1, CH: 0x79, FLG: 0x10
+[  :22.769] TASKID: 2, Count: 8, flag: 0x00
+A[  :23.792] TASKID: 1, CH: 0x41, FLG: 0x0f
+[  :23.793] TASKID: 2, Count: 9, flag: 0x0f
+c[  :25.182] TASKID: 1, CH: 0x63, FLG: 0x10
+[  :25.182] TASKID: 2, Count:10, flag: 0x00
+L[  :28.155] TASKID: 1, CH: 0x4c, FLG: 0x13
+[  :28.155] TASKID: 2, Count:11, flag: 0x03
+l[  :30.479] TASKID: 1, CH: 0x6c, FLG: 0x10
+[  :30.479] TASKID: 2, Count:12, flag: 0x00
+U[  :32.765] TASKID: 1, CH: 0x55, FLG: 0x1c
+[  :32.765] TASKID: 2, Count:13, flag: 0x0c
+u[  :33.851] TASKID: 1, CH: 0x75, FLG: 0x10
+[  :33.851] TASKID: 2, Count:14, flag: 0x00

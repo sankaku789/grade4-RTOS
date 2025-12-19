@@ -1,0 +1,55 @@
+TOPPERS/ASP Kernel Release 1.9.0 for RX62N/TECL-01/02 (Dec 18 2025, 15:29:59)
+Copyright (C) 2000-2003 by Embedded and Real-Time Systems Laboratory
+                            Toyohashi Univ. of Technology, JAPAN
+Copyright (C) 2004-2014 by Embedded and Real-Time Systems Laboratory
+            Graduate School of Information Science, Nagoya Univ., JAPAN
+NIT, Tomakomai College,
+03. Ikeda Kosuke
+Copyright (C) 2010 by Witz Corporation, JAPAN
+Copyright (C) 2013 by Mitsuhiro Matsuura
+Copyright (C) 2014-2017 by Dep. of Computer Science and Engineering
+                    Tomakomai National College of Technology, JAPAN
+
+System logging task is started on port 1.
+ex82 started, MAC ADDR: 74:90:50:89:36:00.
+[  : 0.001] TSKID: 3, TSKPRI: 4, exinf: 0x00000003, name: task3 (main_task)
+[  : 0.002] TSKID: 1, TSKPRI: 6, exinf: 0x00000001, name: task1
+[  : 0.002] TASKID: 1, Count: 0
+[  : 0.002] TSKID: 2, TSKPRI: 6, exinf: 0x00000002, name: task2
+[  : 0.002] TASKID: 2, Count: 0
+[  : 1.003] TASKID: 1,  SW: 0xfe pressed
+[  : 1.003] TASKID: 1, CH: 0xfe, FLG: 0x01
+[  : 3.065] TASKID: 2, Count: 1, flag: 0x01
+[  : 4.066] TASKID: 1,  SW: 0xff pressed
+[  : 4.066] TASKID: 1, CH: 0xff, FLG: 0x10
+[  : 6.128] TASKID: 2, Count: 2, flag: 0x00
+[  : 7.129] TASKID: 1,  SW: 0xfd pressed
+[  : 7.129] TASKID: 1, CH: 0xfd, FLG: 0x02
+[  : 7.816] TASKID: 2, Count: 3, flag: 0x02
+[  : 8.817] TASKID: 1,  SW: 0xff pressed
+[  : 8.817] TASKID: 1, CH: 0xff, FLG: 0x10
+[  :10.192] TASKID: 2, Count: 4, flag: 0x00
+[  :11.193] TASKID: 1,  SW: 0xfb pressed
+[  :11.193] TASKID: 1, CH: 0xfb, FLG: 0x04
+[  :11.193] TASKID: 2, Count: 5, flag: 0x04
+[  :12.194] TASKID: 1,  SW: 0xff pressed
+[  :12.194] TASKID: 1, CH: 0xff, FLG: 0x10
+[  :14.256] TASKID: 2, Count: 6, flag: 0x00
+[  :15.257] TASKID: 1,  SW: 0xf7 pressed
+[  :15.257] TASKID: 1, CH: 0xf7, FLG: 0x08
+[  :15.257] TASKID: 2, Count: 7, flag: 0x08
+[  :16.258] TASKID: 1,  SW: 0xf3 pressed
+[  :16.258] TASKID: 1, CH: 0xf3, FLG: 0x0c
+[  :16.258] TASKID: 2, Count: 8, flag: 0x0c
+[  :17.259] TASKID: 1,  SW: 0xff pressed
+[  :17.259] TASKID: 1, CH: 0xff, FLG: 0x10
+[  :17.946] TASKID: 2, Count: 9, flag: 0x00
+[  :18.947] TASKID: 1,  SW: 0xf0 pressed
+[  :18.947] TASKID: 1, CH: 0xf0, FLG: 0x0f
+[  :20.322] TASKID: 2, Count:10, flag: 0x0f
+[  :21.323] TASKID: 1,  SW: 0xfc pressed
+[  :21.323] TASKID: 1, CH: 0xfc, FLG: 0x03
+[  :24.073] TASKID: 2, Count:11, flag: 0x03
+[  :25.074] TASKID: 1,  SW: 0xff pressed
+[  :25.074] TASKID: 1, CH: 0xff, FLG: 0x10
+[  :25.074] TASKID: 2, Count:12, flag: 0x00

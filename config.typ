@@ -40,13 +40,13 @@
     
     // 本文の設定
     set text(font: (seriffont, seriffont-cjk), lang: "ja",size: 10pt)
-    set par(first-line-indent: (amount: 1em, all: true), leading: 1.0em, justify: true)
+    set par(first-line-indent: (amount: 1em, all: true), leading: 0.8em, justify: true,spacing: 1.0em)
 
     // 箇条書きの設定
     set list(indent: 1.0em, body-indent: 0.8em, marker: ([\u{2022}], [-], [\u{002A}], [・]))
     set enum(indent: 1.0em, body-indent: 0.8em, numbering: "(1.a.i.A)")
     show list: set par(first-line-indent: 0pt)
-    show enum: set par(first-line-indent: 0pt)    
+    show enum: set par(first-line-indent: 0pt)   
 
     // 参考文献の表示設定
     set bibliography(style: "sist02", full: true)
@@ -55,7 +55,7 @@
     set heading(numbering: "1.", bookmarked: true)
     show heading: it => {
       set text(font: (sansfont, sansfont-cjk), lang: "ja", weight: "medium")
-      set block(spacing: 1.7em)
+      set block(spacing: 1.4em)
       it
     }
     show heading.where(level: 1): set text(size: 14.4pt)
@@ -92,19 +92,6 @@
     counter(page).update(1)
 }
 
-// Texのmaketitleに対応する関数
-// #let makeTitle(
-//   title: "", 
-//   authors: "", 
-//   keywords: "",
-//   date: datetime.today().display("[year]年[month repr:numerical padding:none]月[day padding:none]日"),
-//   abstract: []
-// ) = {
-//   set align(center)
-//   v(2em)
-//   text(1.7em, title)
-//   v(1.5em)
-// }
 
 #let includePDF(
   file, 

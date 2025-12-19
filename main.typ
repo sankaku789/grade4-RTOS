@@ -18,10 +18,9 @@
 
 #include "src/03_process.typ"
 
-
-
-
 = まとめ
+
+= 感想
 
 #bibliography("hayagriva.yaml", style: "sist02", full: true)
 

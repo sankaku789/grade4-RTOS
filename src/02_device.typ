@@ -13,5 +13,5 @@
 - *マイコンボード仕様*
   - マイコン： RX62N
   - デバッガ： E1 エミュレータ
-  - OS： TOPPERS/ASPカーネル（ITRON）
+  - OS： TOPPERS/ASPカーネル（μITRON4.0）
 

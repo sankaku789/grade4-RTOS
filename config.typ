@@ -41,7 +41,7 @@
 
   // 本文の設定
   set text(font: (seriffont, seriffont-cjk), lang: "ja", size: 10pt)
-  set par(first-line-indent: (amount: 1em, all: true), leading: 0.8em, justify: true, spacing: 1.0em)
+  set par(first-line-indent: (amount: 1em, all: true), leading: 0.8em, justify: true, spacing: 1.2em)
 
   // 箇条書きの設定
   set list(indent: 1.0em, body-indent: 0.8em, marker: ([\u{2022}], [-], [\u{002A}], [・]))

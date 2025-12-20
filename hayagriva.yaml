@@ -69,3 +69,8 @@ train-moniter:
   url:
     value: https://www.mesw.co.jp/business/report/pdf/mcr_28_02.pdf
     date: 2025-12-17
+  
+rtos-manual:
+  type: book
+  title: μITRON4.0仕様 Ver. 4.01.00
+  author: ["高田 広章", "坂村 健"]
